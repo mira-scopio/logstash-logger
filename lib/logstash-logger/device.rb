@@ -20,6 +20,8 @@ module LogStashLogger
     autoload :Stderr, 'logstash-logger/device/stderr'
     autoload :Balancer, 'logstash-logger/device/balancer'
     autoload :MultiDelegator, 'logstash-logger/device/multi_delegator'
+    autoload :RabbitMq, 'logstash-logger/device/rabbitmq'
+
 
     def self.new(opts)
       opts = opts.dup
@@ -60,6 +62,7 @@ module LogStashLogger
         when :stderr then Stderr
         when :multi_delegator then MultiDelegator
         when :balancer then Balancer
+        when :rabbitmq then RabbitMq
         else fail ArgumentError, 'Invalid device type'
       end
     end
