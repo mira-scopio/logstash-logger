@@ -48,6 +48,7 @@ module LogStashLogger
     end
 
     def self.device_klass_for(type)
+      puts 'test'
       case type.to_sym
         when :udp then UDP
         when :tcp then TCP
