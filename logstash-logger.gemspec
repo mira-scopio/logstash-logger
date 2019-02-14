@@ -21,6 +21,7 @@ Gem::Specification.new do |gem|
   gem.add_runtime_dependency 'logstash-event', '~> 1.2'
 
   gem.add_development_dependency 'rails'
+  gem.add_development_dependency 'bunny'
   gem.add_development_dependency 'redis'
   gem.add_development_dependency 'poseidon'
   gem.add_development_dependency 'aws-sdk-kinesis'
