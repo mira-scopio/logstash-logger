@@ -1,7 +1,6 @@
 require 'logger'
 require 'logstash-logger/tagged_logging'
 require 'logstash-logger/silenced_logging'
-
 module LogStashLogger
   autoload :MultiLogger, 'logstash-logger/multi_logger'
 

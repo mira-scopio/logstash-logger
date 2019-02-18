@@ -42,7 +42,7 @@ module LogStashLogger
                     LogStash::Event.new("message".freeze => msg2str(data), "@timestamp".freeze => time)
                 end
 
-        event['severity'.freeze] ||= severity
+        event['level'.freeze] ||= severity
         #event.type = progname
 
         event['host'.freeze] ||= HOST
