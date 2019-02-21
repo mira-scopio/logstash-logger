@@ -62,6 +62,8 @@ module LogStashLogger
     end
 
     logger.formatter = formatter if formatter
+    level = opts.delete(:level)
+    logger.level = level if level
     logger
   end
 
